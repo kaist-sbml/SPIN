@@ -1,0 +1,26 @@
+12h (predicted from 0-10h), OD 28.7, CarbonContents: 12.25, Ethanol: 2.79, Acetoin: 7.23, BDO: 31.54, Succinate: 0.00, Lactate: 0.00, Formate: 0.00, Acetate: 0.38
+14h (predicted from 2-12h), OD 30.9, CarbonContents: 37.34, Ethanol: 2.69, Acetoin: 8.56, BDO: 42.31, Succinate: 0.00, Lactate: 0.00, Formate: 0.00, Acetate: 0.48
+16h (predicted from 4-14h), OD 32.8, CarbonContents: 52.18, Ethanol: 2.83, Acetoin: 8.89, BDO: 54.02, Succinate: 0.71, Lactate: 0.00, Formate: 0.00, Acetate: 0.21
+18h (predicted from 6-16h), OD 34.6, CarbonContents: 26.87, Ethanol: 2.81, Acetoin: 10.53, BDO: 62.30, Succinate: 1.84, Lactate: 0.00, Formate: 0.00, Acetate: 0.00
+20h (predicted from 8-18h), OD 33.9, CarbonContents: 53.08, Ethanol: 3.07, Acetoin: 11.99, BDO: 68.82, Succinate: 2.84, Lactate: 0.00, Formate: 0.00, Acetate: 0.13
+22h (predicted from 10-20h), OD 33.3, CarbonContents: 31.18, Ethanol: 3.31, Acetoin: 13.21, BDO: 74.34, Succinate: 3.09, Lactate: 0.19, Formate: 0.00, Acetate: 0.36
+24h (predicted from 12-22h), OD 33.1, CarbonContents: 14.63, Ethanol: 3.38, Acetoin: 7.34, BDO: 88.99, Succinate: 4.73, Lactate: 0.00, Formate: 0.00, Acetate: 0.28
+26h (predicted from 14-24h), OD 32.6, CarbonContents: 51.31, Ethanol: 3.42, Acetoin: 3.48, BDO: 98.89, Succinate: 5.91, Lactate: 0.00, Formate: 0.19, Acetate: 0.00
+28h (predicted from 16-26h), OD 32.2, CarbonContents: 40.39, Ethanol: 3.18, Acetoin: 1.97, BDO: 105.60, Succinate: 6.68, Lactate: 0.13, Formate: 0.11, Acetate: 0.17
+30h (predicted from 18-28h), OD 31.9, CarbonContents: 34.97, Ethanol: 3.26, Acetoin: 2.13, BDO: 108.99, Succinate: 6.82, Lactate: 0.06, Formate: 0.30, Acetate: 0.37
+32h (predicted from 20-30h), OD 32.1, CarbonContents: 29.65, Ethanol: 3.30, Acetoin: 2.44, BDO: 114.72, Succinate: 6.79, Lactate: 0.33, Formate: 0.49, Acetate: 0.27
+34h (predicted from 22-32h), OD 31.6, CarbonContents: 24.47, Ethanol: 3.47, Acetoin: 2.72, BDO: 118.12, Succinate: 6.64, Lactate: 0.56, Formate: 0.52, Acetate: 0.53
+36h (predicted from 24-34h), OD 31.2, CarbonContents: 19.75, Ethanol: 3.62, Acetoin: 2.96, BDO: 122.39, Succinate: 6.34, Lactate: 0.86, Formate: 0.73, Acetate: 0.52
+38h (predicted from 26-36h), OD 31.0, CarbonContents: 62.17, Ethanol: 3.47, Acetoin: 2.83, BDO: 122.56, Succinate: 5.85, Lactate: 1.30, Formate: 0.88, Acetate: 0.50
+BDO decrement predicted: 123.34 (36h) → 120.94 (38h, predicted). RPM suggestion: 350 → 200, predicted BDO: 122.57
+40h (predicted from 28-38h), OD 30.6, CarbonContents: 58.75, Ethanol: 3.85, Acetoin: 3.14, BDO: 125.27, Succinate: 5.01, Lactate: 1.32, Formate: 0.69, Acetate: 0.75
+42h (predicted from 30-40h), OD 30.2, CarbonContents: 53.65, Ethanol: 4.10, Acetoin: 3.34, BDO: 127.18, Succinate: 4.68, Lactate: 1.57, Formate: 0.74, Acetate: 0.82
+44h (predicted from 32-42h), OD 29.9, CarbonContents: 48.43, Ethanol: 4.16, Acetoin: 3.41, BDO: 129.80, Succinate: 4.31, Lactate: 1.64, Formate: 0.77, Acetate: 0.85
+46h (predicted from 34-44h), OD 29.6, CarbonContents: 43.38, Ethanol: 4.39, Acetoin: 3.63, BDO: 132.54, Succinate: 3.88, Lactate: 1.67, Formate: 0.85, Acetate: 0.95
+48h (predicted from 36-46h), OD 29.2, CarbonContents: 38.29, Ethanol: 4.51, Acetoin: 4.17, BDO: 133.21, Succinate: 3.23, Lactate: 1.92, Formate: 1.13, Acetate: 1.23
+54h (predicted from 38-48h), OD 28.5, CarbonContents: 30.18, Ethanol: 4.58, Acetoin: 6.12, BDO: 137.13, Succinate: 2.48, Lactate: 2.15, Formate: 0.90, Acetate: 1.54
+60h (predicted from 40-54h), OD 27.7, CarbonContents: 18.48, Ethanol: 4.77, Acetoin: 8.89, BDO: 138.84, Succinate: 1.37, Lactate: 2.46, Formate: 0.97, Acetate: 2.02
+66h (predicted from 42-60h), OD 26.9, CarbonContents: 8.95, Ethanol: 4.71, Acetoin: 13.45, BDO: 137.78, Succinate: 0.84, Lactate: 2.49, Formate: 1.11, Acetate: 2.80
+BDO decrement predicted: 139.40 (60h) → 136.15 (66h, predicted). RPM suggestion: 350 → 150, predicted BDO: 137.78
+72h (predicted from 44-66h), OD 26.2, CarbonContents: 4.07, Ethanol: 4.97, Acetoin: 18.86, BDO: 133.05, Succinate: 0.25, Lactate: 2.54, Formate: 1.23, Acetate: 3.71
+BDO decrement predicted: 136.25 (66h) → 131.13 (72h, predicted). RPM suggestion: 350 → 150, predicted BDO: 132.39
