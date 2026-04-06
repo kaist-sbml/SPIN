@@ -1,9 +1,9 @@
-import torch
-from torch import nn
+import tensorflow as tf
+from tensorflow.keras import layers, Model
 
 TARGET_COLS = ["OD", "CarbonContents", "Ethanol", "Acetoin", "BDO"]
 
-class BiLSTMRegressor(nn.Module):
+class BiLSTMRegressor(Model):
     def __init__(
         self,
         input_dim: int,
@@ -11,46 +11,32 @@ class BiLSTMRegressor(nn.Module):
         hidden_dim2: int = 64,
         dropout: float = 0.2,
         out_activation: str = "relu",
+        **kwargs
     ):
-        super().__init__()
-
-        self.lstm1 = nn.LSTM(
-            input_size=input_dim,
-            hidden_size=hidden_dim1,
-            num_layers=1,
-            batch_first=True,
-            bidirectional=True
+        super(BiLSTMRegressor, self).__init__(**kwargs)
+        self.lstm1 = layers.Bidirectional(
+            layers.LSTM(hidden_dim1, return_sequences=True),
+            input_shape=(None, input_dim)
         )
-        self.drop1 = nn.Dropout(dropout)
-        self.lstm2 = nn.LSTM(
-            input_size=hidden_dim1 * 2,
-            hidden_size=hidden_dim2,
-            num_layers=1,
-            batch_first=True,
-            bidirectional=True
+        self.drop1 = layers.Dropout(dropout)
+        self.lstm2 = layers.Bidirectional(
+            layers.LSTM(hidden_dim2, return_sequences=False)
         )
-        self.drop2 = nn.Dropout(dropout)
-        self.fc1 = nn.Linear(hidden_dim2 * 2, 128)
-        self.fc2 = nn.Linear(128, len(TARGET_COLS))
+        self.drop2 = layers.Dropout(dropout)
+        self.fc1 = layers.Dense(128, activation="relu")
+        self.fc2 = layers.Dense(len(TARGET_COLS))
         if out_activation == "relu":
-            self.out_act = nn.ReLU()
+            self.out_act = layers.Activation("relu")
         elif out_activation == "softplus":
-            self.out_act = nn.Softplus(beta=1.0, threshold=20.0)
-        elif out_activation == "none":
-            self.out_act = nn.Identity()
+            self.out_act = layers.Activation("softplus")
         else:
-            raise ValueError("out_activation must be 'relu', 'softplus', or 'none'")
+            self.out_act = layers.Activation("linear")
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        h1, _ = self.lstm1(x)
-        h1 = self.drop1(h1)
-        
-        h2, (hn, cn) = self.lstm2(h1)
-        last_hidden = torch.cat((hn[-2,:,:], hn[-1,:,:]), dim=1)
-        
-        h2_dropped = self.drop2(last_hidden)
-
-        out = torch.relu(self.fc1(h2_dropped))
-        out = self.fc2(out)
-        
+    def call(self, x):
+        h = self.lstm1(x)
+        h = self.drop1(h)
+        h = self.lstm2(h)
+        h = self.drop2(h)
+        h = self.fc1(h)
+        out = self.fc2(h)
         return self.out_act(out)
