@@ -20,6 +20,7 @@ The system uses trained **BiLSTM/Transformer models** and supports:
 ├── Models/
 │ ├── ckpt_BiLSTM.pt
 │ └── ckpt_Transformer.pt
+│
 ├── Input/
 │ ├── example_dynamic_data.csv
 │ └── example_static_data.csv
