@@ -39,10 +39,10 @@ The system uses trained **BiLSTM/Transformer models** and supports:
 ## 🚀 Usage
 run with BiLSTM model
 ```
-python predict.py --model BiLSTM --dynamic-csv example_dynamic_data.csv --static-csv example_static_data.csv
+python predict.py --model BiLSTM --dynamic-csv ./Input/example_dynamic_data.csv --static-csv ./Inputexample_static_data.csv
 ```
 
 run with Transformer model
 ```
-python predict.py --model Transformer --dynamic-csv example_dynamic_data.csv --static-csv example_static_data.csv
+python predict.py --model Transformer --dynamic-csv ./Inputexample_dynamic_data.csv --static-csv ./Inputexample_static_data.csv
 ```
