@@ -11,16 +11,20 @@ The system uses trained **BiLSTM/Transformer models** and supports:
 ## 📁 Project Structure
 ```
 .
-├── predict.py # Entry point (model dispatcher)
+├── predict.py # Entry point
+├── predict_BiLSTM.py # BiLSTM inference logic
 ├── predict_Transformer.py # Transformer inference logic
-├── predict_BiLSTM.py # (empty placeholder)
+├── model_BiLSTM.py # BiLSTM model definition
 ├── model_Transformer.py # Transformer model definition
-├── model_BiLSTM.py # (empty placeholder)
-├── ckpt_transformer.pt # Pretrained Transformer checkpoint
-├── example_dynamic_data.csv # Example dynamic input
-├── example_static_data.csv # Example static input
----
+│
+├── Models/
+│ ├── ckpt_BiLSTM.pt
+│ └── ckpt_Transformer.pt
+├── Input/
+│ ├── example_dynamic_data.csv
+│ └── example_static_data.csv
 ```
+---
 
 ## ⚙️ Requirements
 
