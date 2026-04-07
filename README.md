@@ -18,7 +18,7 @@ The system uses trained **BiLSTM/Transformer models** and supports:
 ├── model_Transformer.py # Transformer model definition
 │
 ├── Models/
-│ ├── ckpt_BiLSTM.pt
+│ ├── ckpt_BiLSTM.keras
 │ └── ckpt_Transformer.pt
 │
 ├── Input/
