@@ -9,7 +9,7 @@ import tensorflow as tf
 TARGET_COLS = ["OD", "CarbonContents", "Ethanol", "Acetoin", "BDO"]
 DYN_EXTRA = ["rpm", "Feed", "delta_t"]
 ALL_DYN = TARGET_COLS + DYN_EXTRA
-CKPT_PATH = Path("./Models/ckpt_BiLSTM.pt")
+CKPT_PATH = Path("./Models/ckpt_BiLSTM.keras")
 
 def load_example_inputs(dynamic_csv: Path, static_csv: Path):
     df_dyn = pd.read_csv(dynamic_csv).rename(columns=str.strip)
